@@ -24,6 +24,6 @@ jobs:
 
       - name: Get Weather
         run: |
-          python extract_weather.py
+          python ETL Weather/extract_weather.py
         env:
           OPENWEATHER_API_KEY: ${{ secrets.OPENWEATHER_API_KEY }}
