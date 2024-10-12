@@ -1,5 +1,8 @@
 # kuldeep_take_two
 
+![Github Workflow (Includes Test cases run and code security checks)](https://github.com/kuldeep27396/kuldeep_take_two/actions/workflows/python-app.yml/badge.svg)
+
+
 ## Requirements
 
 - Python 3.12
