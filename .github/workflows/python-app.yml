@@ -22,7 +22,7 @@ jobs:
 
       - name: Run tests
         run: |
-          python -m unittest discover ETL_Weather -v
+          python -m unittest discover tests/test_weather_etl.py -v
         env:
           OPENWEATHER_API_KEY: ${{ secrets.OPENWEATHER_API_KEY }}
 
