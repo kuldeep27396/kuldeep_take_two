@@ -106,7 +106,7 @@ Reliability is ensured through:
 1. **Dataproc**:
    - Use preemptible VMs for batch processing
    - Implement autoscaling
-   - Utilize job-specific clusters
+   - Utilize job-specific clusters like we can use e2 clusters rather than n2
 
 2. **Storage**:
    - Use Parquet format for efficient storage and processing
@@ -116,22 +116,11 @@ Reliability is ensured through:
    - Use partitioned and clustered tables
    - Implement cost controls and quotas
 
-4. **General**:
-   - Use data sampling for development and testing
-   - Consider BigQuery flat-rate pricing for high query volumes
-   - Leverage GCP committed use discounts
-
-## Setup and Configuration
-
-(Include steps for setting up the pipeline, such as creating GCP resources, configuring Airflow, etc.)
 
 ## Monitoring and Maintenance
 
-- Use Cloud Monitoring for observing pipeline performance
-- Set up alerts for job failures and SLA breaches
-- Regularly review and optimize BigQuery queries
+- Use Cloud Monitoring to observe pipeline performance
+- Set up alerts for job failures and SLA breaches, which can include SLA with airflow also
+- Regularly review and optimize BigQuery queries, setup one common service to monitor cost for all projects 
 - Monitor costs and usage across all components
 
----
-
-This README provides an overview of the ETL pipeline architecture and its key components. For detailed implementation instructions, please refer to the individual component documentation.
