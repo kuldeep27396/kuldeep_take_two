@@ -30,7 +30,7 @@
 | Pipeline Failures | Any task in DAG fails                                        | High | PagerDuty |
 | SLA Breaches | Execution time > 120% of average                             | Medium | Slack     |
 | API Rate Limit Warnings | >80% (depends) of hourly API quota used                      | Medium | Slack     |
-| Data Quality Issues | Error rate > 1% in processed data (error percentage depends0 | High | xMatters  |
+| Data Quality Issues | Error rate > 1% in processed data (error percentage depends) | High | xMatters  |
 | Resource Utilization Spikes | CPU/Memory > 90% for >15 minutes                             | Medium | Slack     |
 | Data Volume Anomalies | Daily volume ±30% from 7-day average                         | Low | Email     |
 
