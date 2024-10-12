@@ -48,3 +48,14 @@ python -m unittest test_weather_etl.py
 2. **API Rate Limits**: The script implements a simple exponential backoff strategy for API requests. Adjust the `max_retries` and `retry_delay` variables if needed.
 
 3. **Large Data Handling**: We will use pySpark if lots of data is coming. With dataproc we can easily handle Tb's of data.
+
+## Architecture 
+
+https://github.com/kuldeep27396/kuldeep_take_two/blob/main/Architecture/Explanation.md 
+
+## Alerts and Monitoring
+
+https://github.com/kuldeep27396/kuldeep_take_two/blob/main/Monitoring%20and%20Alerting%20Design/Monitoring%20and%20Alerting.md
+
+
+
