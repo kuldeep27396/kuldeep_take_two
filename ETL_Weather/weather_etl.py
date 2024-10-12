@@ -1,31 +1,13 @@
-import os
 import requests
-import json
 import time
 import logging
 from datetime import datetime, timedelta
 import pandas as pd
 from typing import List, Dict, Any
 
-# Setup logging
+from ETL_Weather.utils.constants import API_KEY, BASE_URL, CITY_TIMEZONES, CITIES
+
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
-
-# OpenWeatherMap API configuration
-# API_KEY = os.getenv("OPENWEATHER_API_KEY")
-API_KEY = "1f93b831f6cf6bebfd1797a087fa1b17"
-BASE_URL = "https://api.openweathermap.org/data/2.5/weather"
-
-# List of cities
-CITIES = ["London", "New York", "Tokyo", "Sydney", "Berlin"]
-
-# City timezones (offset in seconds from UTC)
-CITY_TIMEZONES = {
-    'London': 0,
-    'New York': -14400,  # UTC-4
-    'Tokyo': 32400,  # UTC+9
-    'Sydney': 36000,  # UTC+10
-    'Berlin': 3600  # UTC+1
-}
 
 
 def extract_weather_data(city: str) -> Dict[str, Any]:
@@ -174,6 +156,7 @@ def aggregate_daily_data(df: pd.DataFrame) -> pd.DataFrame:
 
 def main():
     extracted_data = []
+    #We will save this in staging table as json for large data
 
     for city in CITIES:
         data = extract_weather_data(city)

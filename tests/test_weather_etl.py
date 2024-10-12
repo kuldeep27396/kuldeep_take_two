@@ -1,6 +1,7 @@
 import unittest
-from weather_etl import categorize_wind_speed, normalize_weather_condition, local_time
+from ETL_Weather.weather_etl import categorize_wind_speed, normalize_weather_condition, local_time
 from datetime import datetime, timedelta
+
 
 class TestWeatherETL(unittest.TestCase):
 
