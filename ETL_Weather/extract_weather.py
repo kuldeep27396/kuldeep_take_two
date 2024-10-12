@@ -1,3 +1,5 @@
+import os
+
 import requests
 import json
 import time
@@ -8,7 +10,8 @@ from datetime import datetime
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # OpenWeatherMap API configuration
-API_KEY = "1f93b831f6cf6bebfd1797a087fa1b17"  # Removed the extra space
+API_KEY = "1f93b831f6cf6bebfd1797a087fa1b17"
+# API_KEY = os.getenv("OPENWEATHER_API_KEY")
 BASE_URL = "https://api.openweathermap.org/data/2.5/weather"
 
 # List of cities
