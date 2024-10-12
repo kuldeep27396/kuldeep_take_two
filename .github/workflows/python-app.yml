@@ -24,6 +24,6 @@ jobs:
 
       - name: Get Weather
         run: |
-          python your_script.py  # Replace with the path to your script
+          python extract_weather.py
         env:
           OPENWEATHER_API_KEY: ${{ secrets.OPENWEATHER_API_KEY }}
