@@ -26,12 +26,6 @@ jobs:
         env:
           OPENWEATHER_API_KEY: ${{ secrets.OPENWEATHER_API_KEY }}
 
-      - name: Run ETL Process
-        run: |
-          python ETL_Weather/weather_etl.py
-        env:
-          OPENWEATHER_API_KEY: ${{ secrets.OPENWEATHER_API_KEY }}
-
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
         with:
