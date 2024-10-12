@@ -17,7 +17,7 @@ This project implements an ETL (Extract, Transform, Load) pipeline for processin
 
 ## Architecture
 
-![ETL Pipeline Architecture](Architecture/Part%202%20Architecture.png)
+![ETL Pipeline Architecture](https://raw.githubusercontent.com/kuldeep27396/kuldeep_take_two/refs/heads/main/Architecture/Part%202%20Architecture.png)
 
 The architecture diagram above illustrates the high-level design of our ETL pipeline. It showcases the flow of data from the OpenWeatherMap API through various GCP services, ultimately landing in BigQuery for analysis.
 
